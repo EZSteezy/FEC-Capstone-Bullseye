@@ -7,7 +7,7 @@ export const ReviewProvider = ({children}) => {
     
     useEffect(() => {
         (async () => {
-          const response = await fetch('https://fec-deploy.onrender.com/reviews');
+          const response = await fetch('https://bullseye-db-server.onrender.com/reviews');
           const revs = await response.json();
           setReviews(revs);
           console.log(revs);

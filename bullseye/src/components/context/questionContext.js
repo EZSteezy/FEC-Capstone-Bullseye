@@ -7,7 +7,7 @@ export const QAProvider = ({children}) => {
     
     useEffect(() => {
         (async () => {
-          const response = await fetch('https://fec-deploy.onrender.com/questions');
+          const response = await fetch('https://bullseye-db-server.onrender.com/questions');
           const questions = await response.json();
           setQA(questions);
           
