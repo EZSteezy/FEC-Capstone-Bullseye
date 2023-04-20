@@ -1,12 +1,14 @@
 const { Pool } = require('pg');
 
 
+const connectionString ='postgres://bullseye_db_user:o5VAYrb6996iHZVGZtzVxQA5djnRWOJB@dpg-ch0pk34eoogranc03rd0-a.oregon-postgres.render.com/bullseye_db';
+
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
-    ssl: {
-        rejectUnauthorized: false
-    }
-  });
+  connectionString: connectionString,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
 
 
 async function migration() {

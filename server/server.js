@@ -2,14 +2,20 @@ const express = require('express');
 const app = express();
 const { Pool } = require('pg');
 const cors = require('cors');
+const dotenv = require('dotenv');
+dotenv.config();
 const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
+
+
+const connectionString ='postgres://bullseye_db_user:o5VAYrb6996iHZVGZtzVxQA5djnRWOJB@dpg-ch0pk34eoogranc03rd0-a.oregon-postgres.render.com/bullseye_db';
+
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: connectionString,
   ssl: {
-      rejectUnauthorized: false
+    rejectUnauthorized: false
   }
 });
 
