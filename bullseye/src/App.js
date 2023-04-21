@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { ProductProvider } from "./components/context/ProductContext.js";
 import Footer from "./components/Foot/Footer.js";
 import Signup from "./components/Foot/Signup.js";
