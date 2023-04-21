@@ -18,12 +18,42 @@ import About from "./components/about/about.jsx";
 
 function App() {
 
+  useEffect(() => {
+    // get all the images on the page
+    const images = document.querySelectorAll('img');
+    // loop through each image
+    images.forEach((image) => {
+      // set the loading attribute to "lazy"
+      image.setAttribute('loading', 'lazy');
+    });
+    // add an event listener to detect when the image is outside the viewport
+    const handleScroll = () => {
+      images.forEach((image) => {
+        const { top, bottom } = image.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        // if the image is outside the viewport, set the loading attribute to "auto"
+        if (bottom < 0 || top > windowHeight) {
+          image.setAttribute('loading', 'auto');
+        } else {
+          // otherwise, set the loading attribute back to "lazy"
+          image.setAttribute('loading', 'lazy');
+        }
+      });
+    };
+    window.addEventListener('scroll', handleScroll);
+    // clean up the event listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <ProductProvider>
       <Header />
       <div className="photo-cart-merg">
         <Photo />
-        <Addcart/>
+        <Addcart />
       </div>
       <About />
       <CarouselContainer />
