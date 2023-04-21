@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "./Card.jsx";
 import Loading from "./Loading.jsx";
 import Slider from 'react-slick';
-import imageUrls from "./imgUrls.js";
+import imageUrls from "./images/imgUrls.js";
 import './Carousel.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
