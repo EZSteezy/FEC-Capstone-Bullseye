@@ -6,8 +6,9 @@ import imageUrls from "./imgUrls.js";
 import './Carousel.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LazyLoad from 'react-lazy-load';
 
-const Carousel2 = ({prod}) => {
+const Carousel2 = ({ prod }) => {
     const products = prod;
 
     // Settings variable used to populate the "Slider" components from Slick
@@ -22,45 +23,65 @@ const Carousel2 = ({prod}) => {
         slide: 'div',
         draggable: false
     }
-    
+
     return (
         <div className="carousel">
             <h4 className="main-carousel-header">Featured Products</h4>
             {(products.length <= 0) ? <div><Loading /></div> :
-            <div className="carousel-main">
-                <Slider {...settings}>
-                    <div>
-                        <Card image={imageUrls[10]} prod={products[11]} />
-                    </div>
-                    <div>
-                        <Card image={imageUrls[11]} prod={products[12]} />
-                    </div>
-                    <div>
-                        <Card image={imageUrls[12]} prod={products[13]} />
-                    </div>
-                    <div>
-                        <Card image={imageUrls[13]} prod={products[14]} />
-                    </div>
-                    <div>
-                        <Card image={imageUrls[14]} prod={products[15]} />
-                    </div>
-                    <div>
-                        <Card image={imageUrls[15]} prod={products[16]} />
-                    </div>
-                    <div>
-                        <Card image={imageUrls[16]} prod={products[17]} />
-                    </div>
-                    <div>
-                    <Card image={imageUrls[17]} prod={products[18]} />
-                    </div>
-                    <div>
-                        <Card image={imageUrls[18]} prod={products[19]} />
-                    </div>
-                    <div>
-                        <Card image={imageUrls[19]} prod={products[20]} />
-                    </div>
-                </Slider>
-            </div>}
+                <div className="carousel-main">
+                    <Slider {...settings}>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[10]} prod={products[11]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[11]} prod={products[12]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[12]} prod={products[13]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[13]} prod={products[14]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[14]} prod={products[15]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[15]} prod={products[16]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[16]} prod={products[17]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[17]} prod={products[18]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[18]} prod={products[19]} />
+                            </div>
+                        </LazyLoad>
+                        <LazyLoad height={200} once>
+                            <div>
+                                <Card image={imageUrls[19]} prod={products[20]} />
+                            </div>
+                        </LazyLoad>
+                    </Slider>
+                </div>}
         </div>
     )
 }
