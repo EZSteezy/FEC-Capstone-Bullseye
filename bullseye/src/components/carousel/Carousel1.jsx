@@ -6,6 +6,7 @@ import imageUrls from "./imgUrls.js";
 import './Carousel.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LazyLoad from 'react-lazy-load';
 
 const Carousel1 = ({prod}) => {
     const products = prod;
@@ -29,6 +30,7 @@ const Carousel1 = ({prod}) => {
             {(products.length <= 0) ? <div><Loading /></div> :
             <div className="carousel-main">
                 <Slider {...settings}>
+                <LazyLoad height={200} once>
                     <div>
                         <Card image={imageUrls[0]} prod={products[1]} />
                     </div>

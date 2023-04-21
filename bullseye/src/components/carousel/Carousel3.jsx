@@ -6,6 +6,7 @@ import imageUrls from "./imgUrls.js";
 import './Carousel.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LazyLoad from 'react-lazy-load';
 
 const Carousel3 = ({prod}) => {
     const products = prod;
