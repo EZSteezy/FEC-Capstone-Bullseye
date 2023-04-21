@@ -1,6 +1,6 @@
 // These are the image urls from Target website used to populate the carousels
 const imageUrls = [
-    './src/components/carousel/images/1.webp',
+    './images/1.png',
     './images/2.webp',
     './images/3.webp',
     './images/4.webp',
