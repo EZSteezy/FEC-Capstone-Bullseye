@@ -4,11 +4,6 @@
     width: 1340px;
 }
 
-#carouselimg {
-    max-width: 100%;
-    width: 144px;
-  }
-
 .carousel-card {
     display: flex;
     flex-direction: column;
