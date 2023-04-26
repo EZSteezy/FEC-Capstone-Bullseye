@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.338226ef.css",
+    "main.css": "/static/css/main.034d1a68.css",
     "main.js": "/static/js/main.59f3276d.js",
     "static/media/target.jpg": "/static/media/target.6ccd9eda02a3d92e2bdb.jpg",
     "static/media/nikon2.webp": "/static/media/nikon2.533abaeb6ab1f17e2c06.webp",
@@ -10,11 +10,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.338226ef.css.map": "/static/css/main.338226ef.css.map",
+    "main.034d1a68.css.map": "/static/css/main.034d1a68.css.map",
     "main.59f3276d.js.map": "/static/js/main.59f3276d.js.map"
   },
   "entrypoints": [
-    "static/css/main.338226ef.css",
+    "static/css/main.034d1a68.css",
     "static/js/main.59f3276d.js"
   ]
 }
