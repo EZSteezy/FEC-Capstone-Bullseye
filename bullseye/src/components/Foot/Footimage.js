@@ -7,7 +7,7 @@ const Footimage = () => {
   return (
     <div className = { FooterCSS.container2 }>
       <footer className={FooterCSS.targetplacer}>
-        <img src="https://target.scene7.com/is/content/Target/GUEST_ca8f1d56-9000-4407-be78-2c33be983dab" alt="target place"/>
+        <img src="https://target.scene7.com/is/content/Target/GUEST_ca8f1d56-9000-4407-be78-2c33be983dab" style={{width: '562px', height:'212px'}} alt="target place"/>
         </footer>
     </div>
   );
