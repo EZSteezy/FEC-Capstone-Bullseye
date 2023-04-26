@@ -52,21 +52,22 @@ const Photo = () => {
                 <p className="details-brand">Shop all Nikon</p>
                 <p className="title">Nikon D7500 DX-Format DSLR Camera (Body Only, Black)</p>
                     <div className="photo-area">
-                        <ul className="list-products">
+                         <ul className="list-products">
                             <li onClick={() => handlePhotoClick(nikon1)}
-                                className={mainPhoto === nikon1 ? 'selected' : ''}
+                            className={mainPhoto === nikon1 ? 'selected' : ''}
                             >
-                                <img className="photo preload" src={nikon1}></img>
+                            <img className="photo" src={nikon1}></img>
                             </li>
                             <li onClick={() => handlePhotoClick(nikon2)}
-                                className={mainPhoto === nikon2 ? 'selected' : ''}
+                            className={mainPhoto === nikon2 ? 'selected' : ''}
                             >
-                                <img className="photo preload" src={nikon2}></img>
+                            <img className="photo" src={nikon2}></img>
                             </li>
                             <div className="closer">Share your pic</div>
                         </ul>
-                        <div
-                            className="photo-container"
+                    <div
+                        id='photo preload'
+                        className="photo-container"
                         onMouseMove={handleMouseMove}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}

@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.photo.preload {
+#photo.preload {
   display: none;
 }
 
