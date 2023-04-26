@@ -31,52 +31,52 @@ const Carousel2 = ({ prod }) => {
                 <div className="carousel-main">
                     <Slider {...settings}>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[10]} prod={products[11]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[11]} prod={products[12]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[12]} prod={products[13]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[13]} prod={products[14]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[14]} prod={products[15]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[15]} prod={products[16]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[16]} prod={products[17]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[17]} prod={products[18]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[18]} prod={products[19]} />
                             </div>
                         </LazyLoad>
                         <LazyLoad height={200} once>
-                            <div>
+                            <div id='carouselimg'>
                                 <Card image={imageUrls[19]} prod={products[20]} />
                             </div>
                         </LazyLoad>
